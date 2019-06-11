@@ -69,11 +69,6 @@ namespace Webshop.DataAccess.InMemory.Repositories
             Product ProductToDelete = FindProduct(Id);
             products.Remove(ProductToDelete);
         }
-
-
-
-
-
-
+        
     }
 }

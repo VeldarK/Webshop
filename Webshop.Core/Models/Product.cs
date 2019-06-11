@@ -6,13 +6,8 @@ using System.Text;
 
 namespace Webshop.Core.Models
 {
-    public class Product
+    public class Product:BaseEntity
     {
-        public Product()
-        {
-            this.Id = Guid.NewGuid().ToString();
-        }
-        public string Id { get; set; }
         [StringLength(20)]
         [DisplayName("Product Name")]
         public string Name { get; set; }
